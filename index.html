@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+form<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,6 +27,9 @@
         <li><a href="#" onclick="myFunction2()">Home</a></li>
         <li><a href="#" onclick="myFunction3()">About</a></li>
         <li><a href="#" onclick="myFunction4()">Contact</a></li>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
       </ul>
     </nav>
     <main>
@@ -45,12 +48,67 @@
         <h3>More Information</h3>
         <p>Here is some more information for you.</p>
       </aside>
+
+      <section id="section1">
+        <h2>Section 1</h2>
+        <article>
+          <p>This is an article in section 1.</p>
+          <figure>
+            <img src="images/me.jpg" alt="My Image" width="300" height="200" />
+            <figcaption>This is my image.</figcaption>
+          </figure>
+        </article>
+      </section>
+      <section id="section2">
+        <h2>Section 2</h2>
+        <video controls width="300" height="200">
+          <source src="video1.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section id="section3">
+        <h2>Section 3</h2>
+        <audio controls>
+          <source sre="song.mp3" type="audio/mpeg" />
+        </audio>
+      </section>
+      <hr />
+      <form action="/submit" method="post">
+        <label for="fname">First name:</label> <br />
+        <input type="text" id="fname" name="fname" /> <br />
+        <label for="lname">Last name:</label> <br />
+        <input type="text" id="lname" name="lname" /> <br />
+        <label for="email">Email:</label> <br />
+        <input type="email" id="email" name="email" /> <br />
+        <label for="birthday">Birthday:</label> <br />
+        <input type="date" id="birthday" name="birthday" /> <br />
+        <input type="submit" value="Submit" />
+      </form>
     </main>
+
     <button onclick="myFunction()">Click me</button>
+    <hr color="blue" />
+    <aside>
+      <h3>Side Content</h3>
+      <p>This is some side content.</p>
+      <table border="block">
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+        </tr>
+      </table>
+    </aside>
     <footer>
       <p>Created by ChatGPT. Copyright 2024.</p>
+      <address>
+        Contact:<a href="mailto:andreirazy@gmail.com">andreirazy@gmail.com</a>
+      </address>
     </footer>
-
+    <br />
     <!-- script -->
     <script src="script.js"></script>
   </body>
